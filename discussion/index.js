@@ -80,5 +80,62 @@ console.log(outerVariable);
 
 /* [SECTION] Data Types
     Strings are series of characters that create a word , a sentence or anything related to create text
+        - single ('') or double ("") quote
+    Concatenating Strings 
+        - combining multiple strings to create single string
+        - + symbol
 
 */
+let province = 'Makati City';
+let country = "Philippines"
+let fullAddress = province + ' ' + country;
+
+console.log(fullAddress);
+
+let greet = "I live in the " + country;
+console.log(greet);
+
+// The escape character (\) in strings in combinination with other characters can produce different effect in text
+// "\n" refers to creating new line in between text
+let mailAddress = 'Metro Manila\n\nPhilippines';
+console.log(mailAddress);
+
+// use double quotes along with single quotes to allow us to easily include single quotes in texts without using escape character
+let message = "Datu's employee went home early."
+console.log(message);
+message = 'Via\'s charm'
+console.log(message)
+
+// Boolean values are normally used to store values relating to the state of certain things
+let isMarried = false;
+let inGoodConduct = true;
+console.log('Juan is ' + isMarried);
+console.log('Juan is in good conduct ' + inGoodConduct);
+
+// Array - are special kind of data type that is used to store multiple values.
+// [] square brackets or array literal
+// Syntax: let/const arrayName = [elementA, elementB]
+
+let grades = [98, 99, 100, 84];
+console.log(grades)
+
+let details = ['Dave', '26', true, false];
+console.log(details);
+
+// Objects
+// Objects - another special kind of data type that's used to mimic real world objects/items
+// {} curly braces or object literal
+// Syntax: key-valued pair
+/*
+    let/const objectName = {
+        propertyA : value,
+        propertyB : value
+    }
+*/
+
+let person = {
+    name: 'Juan',
+    age: 23,
+    address: ['Makati', "San Pedro"]
+}
+console.log(person);
