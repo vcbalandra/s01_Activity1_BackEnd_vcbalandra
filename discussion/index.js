@@ -136,6 +136,98 @@ console.log(details);
 let person = {
     name: 'Juan',
     age: 23,
-    address: ['Makati', "San Pedro"]
+    address: ['Makati', "San Pedro"],
+    cars: {
+        model: 'Honda',
+        year: 2010
+    }
 }
 console.log(person);
+
+// typeof operator is used to determine the type of data or the value of a variable: It outputs a string
+console.log(typeof person);
+
+// Note: array is a speacial type of object with methods and functions to manipulate it.
+console.log(typeof grades);
+
+console.log(typeof interest);
+
+//const anime = ['one piece', 'one punch man', 'attack on titan'];
+
+//anime = ['kimetsu no yaiba'];
+
+//console.log(anime);// assignment to constant variable
+
+const anime = ['one piece', 'one punch man', 'attack on titan'];
+
+anime[0] = ['kimetsu no yaiba'];
+
+console.log(anime);
+
+/*
+    Constant Object and Arrays
+    The keyword const is a little misleading
+
+    It does not define a constant value. It defines a constant reference to a value
+
+    Because of this you can NOT:
+    reassign a constant value
+    reassign a constant array
+    reassign a constant object
+
+    BUT you CAN:
+    Change the elements of constant array
+    Change the properties of constant object
+*/
+//Null is used to intentionally express the absence of a value in a variable declaration/initialization
+// null simply means that a data type was assigned to a variable but it does not hold any value/amount or is notified 
+
+let spouse = null;
+let juan = ' ';
+// Type coercion - implicit process 
+let result = '5' + 1;
+console.log(result);
+
+let numString = '5';
+let num = Number(numString);
+console.log(typeof num);
+result = num + 1;
+console.log(result);
+
+// undefined represents the state of a variable that has been declared but without an assigned value
+
+let fullName;
+console.log(fullName);
+
+// null vs undefined
+// undefined a variable was created but was not provided a value, null means that a variable was created and was assigned a value that does not hold any value/amount.
+
+console.log(spouse);
+
+/*
+    Main Activity = Product Catalog
+
+    The goal of this exercise is to create a Product Catalog that allows the user to perform various operations such as displaying all products, adding a new product, updating a product's stock, and removing a product from the catalog. This exercise will involve using objects, arrays, and manipulating them with functions.
+
+    Create a "Product Catalog" using objects and arrays. The catalog should consist of multiple product stock quantity, and category.
+        name - string
+        price - number
+        stockQuantity - number
+        category - string
+
+        Display all products.
+        Add a new product.
+        Update a product's stock.
+        Remove a product from the catalog.
+
+        Display all products.
+        Add a new product.
+        Update a product's stock.
+        Remove a product from the catalog.
+
+        method use for loop or if statement
+
+
+*/
+
+
